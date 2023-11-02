@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingHorizontal="30dp"
+    android:background="@drawable/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llfichas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/tragaperras"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivficha1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/campana" />
+
+        <ImageView
+            android:id="@+id/ivficha2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="24dp"
+            app:srcCompat="@drawable/campana" />
+
+        <ImageView
+            android:id="@+id/ivficha3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/campana" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:contentDescription="avance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llfichas"
+        app:srcCompat="@drawable/boton" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="144dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="12dp"
+        android:background="#B4D1D5"
+        android:text="CASH"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llfichas" />
+
+    <TextView
+        android:id="@+id/tvdinero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="50 €"
+        android:textColor="#FF0303"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
